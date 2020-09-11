@@ -7,8 +7,8 @@
     <meta name="keywords" content="Ключевые слова">
     <meta name="description" content="Описание">
     <!-- Включить если нужна поддержка ie11 -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js"></script> -->
-    <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=7289e9da-b810-4e99-973b-adc7197fefe4&lang=ru_RU" type="text/javascript"></script> -->
+    <script src="https://cdn.polyfill.io/v3/polyfill.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7289e9da-b810-4e99-973b-adc7197fefe4&lang=ru_RU" type="text/javascript"></script>
     <link rel="stylesheet" href="css/main.min.css">
     <title>Статьи</title>
 </head>
@@ -732,10 +732,8 @@
 
 
 
-                                    <li class="breadcrumbs__item">
-                                        <a href="" class="breadcrumbs__link">Статьи</a>
-                                    </li>
 
+                                    <li class="breadcrumbs__item">Статьи</li>
 
 
                                 </ul>
@@ -817,8 +815,8 @@
                                     <ul class="pagination__list js-pagination">
 
 
+                                        <li class="pagination__item"><a href="" class="pagination__link is-active">1</a></li>
 
-                                        <li class="pagination__item"><a href="" class="pagination__link">1</a></li>
 
 
 
@@ -1237,7 +1235,8 @@
         </div>
     </div>
     <script src="js/vendors.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <!-- <script src="js/main.min.js"></script> -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
