@@ -1,0 +1,144 @@
+//Миксины
+@import "mixins.scss";
+@import "variables.scss";
+
+body {
+	@include no-touch-select;
+	color: $main-text;
+	font-size: 14px;
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+.ibg {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	img {
+		display: none;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.content {
+	flex: 1 1 auto;
+}
+
+.container {
+	max-width: $maxwidth + px;
+	margin: 0 auto;
+	width: 100%;
+	@media (max-width: $maxwidth1) {
+		max-width: 1386px;
+	}
+	@media (max-width: $maxwidth2) {
+		max-width: 1032px;
+	}
+	@media (max-width: $maxwidth3) {
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+
+//==================================================================================================//
+//             ПОДКЛЮЧЕНИЕ ДОПОЛНИТЕЛЬНЫХ ФАЙЛОВ СТИЛЕЙ                                             //
+//==================================================================================================//
+
+@import "fonts";
+@import "null.scss";
+@import "ui.scss";
+@import "small-blocks.scss";
+
+@media (max-width: $maxwidth2) {
+	.three-dots {
+		position: absolute;
+		width: 100px;
+		z-index: 7;
+		&__btn {
+			margin: 0px 0px 0px 45px;
+			display: inline-block;
+			span {
+				display: inline-block;
+				background-color: $burger-color;
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				left: 0;
+				top: 9px;
+				transition: 0.3s;
+			}
+		}
+		&__body {
+			position: relative;
+		}
+	}
+	.header__top {
+		position: relative;
+	}
+	.top-header {
+		justify-content: flex-end;
+
+		&__menu {
+			position: absolute;
+			z-index: 50;
+			top: 20px;
+			min-width: 235px;
+			min-height: 400px;
+			background-color: #ffffff;
+			border: 1px solid #f4f4f4;
+			border-radius: 20px;
+			transition: 0.3s;
+			opacity: 0;
+			visibility: hidden;
+			&.is-shown {
+				opacity: 1;
+				visibility: visible;
+			}
+			.triangle {
+				position: absolute;
+				top: -18px;
+				left: 50px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 8px 18px 8px;
+				border-color: transparent transparent #f4f4f4 transparent;
+				&:after {
+					content: "";
+					position: absolute;
+					top: 2px;
+					left: -6px;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 0 6px 16px 6px;
+					border-color: transparent transparent #ffffff transparent;
+				}
+			}
+		}
+		&__list {
+			padding: 50px;
+			flex-direction: column;
+			& > * {
+				&:not(:last-child) {
+					margin: 0px 0px 26px 0px;
+				}
+			}
+		}
+	}
+}
+
+//Подключение стилей всех страниц
+@import "../pages/index.scss";
+
+//Подключение модулей
+@import "../modules/modules.scss";

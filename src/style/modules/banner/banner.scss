@@ -1,0 +1,86 @@
+.banner-slider {
+    // .banner-slider__body
+    &__body {
+        padding: 57px 95px;
+        background: $banner-bg;
+        border-radius: 30px;
+        @media (max-width: $maxwidth2) {
+            padding: 50px;
+        }
+        @media (max-width: $maxwidth5) {
+            padding: 37px;
+        }
+    }
+    // .banner-slider__container
+    &__container {
+        overflow: hidden;
+    }
+    // .banner-slider__wrapper
+    &__wrapper {
+        margin: 0px 0px 37px 0px;
+    }
+    // .banner-slider__slide
+    &__slide {
+        display: flex;
+        justify-content: space-between;
+    }
+    // .banner-slider__col
+    &__col {
+    }
+    // .banner-slider__title
+    &__title {
+        display: inline-block;
+        font-family: "HelveticaNeueCyr";
+        font-weight: bold;
+        font-size: 62px;
+        line-height: 70px;
+        color: $main-text;
+        padding: 0px 0px 27px 0px;
+        border-bottom: 5px solid $x-orange-light;
+        margin: 0px 0px 40px 0px;
+        @media (max-width: $maxwidth1) {
+            font-size: 40px;
+        }
+    }
+    // .banner-slider__text
+    &__text {
+        display: block;
+        font-family: "HelveticaNeueCyr";
+        font-weight: 300;
+        font-size: 31px;
+        line-height: 31px;
+        color: $main-text;
+        max-width: 389px;
+        @media (max-width: $maxwidth1) {
+            font-size: 24px;
+            max-width: 224px;
+        }
+    }
+    // .banner-slider__image
+    &__image {
+        @media (max-width: $maxwidth1) {
+            display: none;
+        }
+        img {
+            max-width: 100%;
+            max-width: 100%;
+        }
+    }
+    // .banner-slider__pagination
+    &__pagination {
+        & > * {
+            &:not(:last-child) {
+                margin: 0px 9px 0px 0px;
+            }
+        }
+        .swiper-pagination-bullet {
+            opacity: 1;
+            height: 12px;
+            width: 12px;
+            background-color: #c4c4c4;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: $x-orange-light;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<div @@if(context.data){@@data} class="feedback">
+    <div class="feedback__header">
+        <div class="title-section">
+            <span class="title-section__title">Отзывы о нас</span>
+        </div>
+    </div>
+    <div class="feedback__body">
+        @@include('./modules/template-card/template-card.html', {
+            "title":"Александр",
+            "text":"15 ноября воспользовался услугами вашей компании, приехал специалист с большой буквы",
+            "date":"15.11.2019"
+        })
+        @@include('./modules/template-card/template-card.html', {
+            "title":"Александр",
+            "text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ad, ut itaque perferendis non omnis ipsum expedita fugiat hic labore, accusamus, eveniet distinctio explicabo voluptatum illo. Cupiditate veritatis quo a.",
+            "date":"5.11.2019"
+        })
+    </div>
+</div>

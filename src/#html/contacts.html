@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Контакты",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body class="">
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html')
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-page">
+                <div class="container">
+                    <div class="page">
+                        <aside class="page__aside page__aside--left aside-page">
+                            <div class="aside-page__catalogue">
+                                @@include('./modules/catalogue/catalogue.html')
+                            </div>
+                            <div class="aside-page__filter">
+                                @@include('./modules/filter/filter.html')
+                            </div>
+                            <div class="aside-page__contacts">
+                                @@include('./modules/contacts/contacts.html')
+                            </div>
+                        </aside>
+                        <main class="page__main main-page">
+                            <div class="main-page__searchbar">
+                                @@include('./modules/searchbar/searchbar.html')
+                            </div>
+                            <div class="main-page__breadcrumbs">
+                                @@include('./modules/breadcrumbs/breadcrumbs.html', {
+                                    "links":['Главная','Контакты']
+                                })
+                                <a data-html-mover="main-page__header, 1, 767" href="#" class="compare-button btn btn--empty"><span>2 товаров </span>в сравнении</a>
+                            </div>
+                            <div class="main-page__header">
+                                @@include('./modules/title-section/title-section.html', {"title":"Контакты"})
+                            </div>
+                            <div class="main-page__content content-contacts">
+                                <div class="content-contacts__info-card">
+                                    <p><span>Офис и склад:</span> 220067, г. Минск, ул. В. Сырокомли, д.7, ТЦ «АвтоМир», павильон 181, вход с левого торца.</p>
+                                    <p><span>Режим работы:</span> будни с 9.00 до 20.00, выходные с 9.00 до 19.00. Проезд общественным транспортом до остановки Лошица-3, авт. №№ 124, 65, 52.</p>
+                                </div>
+                                <div class="content-contacts__info">
+                                    <div class="content-contacts__photo">
+                                        <div class="content-contacts__image">
+                                            <img src="img/shop.jpg" alt="Фото магазина" />
+                                        </div>
+                                    </div>
+                                    <div class="content-contacts__requisites">
+                                        <p class="template-text">Интернет-магазин зарегистрирован в Торговом реестре Республики Беларусь 21.10.2011 № 359. Перерегистрация 12.12.2014 №890/2.</p>
+                                        <p class="template-text">Индивидуальный предприниматель Михей Дмитрий Васильевич, юридический и почтовый адрес: 220024, г. Минск, ул. Асаналиева, 2- 457. Свидетельство о регистрации выдано Минским горисполкомом 01.02.2013г., УНП 191849095</p>
+                                        <p class="template-text">Банковские реквизиты: BY60 ALFA 3013 2232 7200 6027 0000 ЗАО «Альфа-банк», 220013, г. Минск, ул. Сурганова, 43-47, код ALFABY2X.</p>
+                                        <p class="template-text template-text--bold">Заявки через корзину на сайте принимаются круглосуточно.</p>
+                                    </div>
+                                </div>
+                                <div class="content-contacts__map-container">
+                                    <div id="ya-map-contacts-full" class="content-contacts__map"></div>
+                                </div>
+                            </div>
+                            <div class="main-page__lastseen">
+                                @@include('./modules/lastseen/lastseen.html')
+                            </div>
+                            <div class="main-page__feedback"></div>
+                        </main>
+                        <aside class="page__aside page__aside--right">
+                            <div data-html-mover="main-page__searchbar, 1, 1400" class="aside-page__call-request">
+                                @@include('./modules/call-request-btn/call-request-btn.html')
+                            </div>
+                            <div class="aside-page__selectors">
+                                @@include('./modules/selector/accumulator-selection.html')
+                            </div>
+                            <div class="aside-page__offers">
+                                @@include('./modules/offer-card/offers.html')
+                            </div>
+                            <div data-html-mover="page__aside--left, 2, 1400" class="aside-page__articles">
+                                @@include('./modules/articles/articles.html')
+                            </div>
+                            <div class="aside-page__feedback">
+                                @@include('./modules/feedback/feedback.html')
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./modules/popups/popup-call-request.html')
+    @@include('./modules/popups/popup-fast-order.html')
+    @@include('./template/scripts.html')
+</body>
+</html>

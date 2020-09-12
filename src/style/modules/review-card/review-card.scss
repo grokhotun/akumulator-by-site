@@ -1,0 +1,44 @@
+.review-card {
+    padding: 32px 25px;
+    background-color: #FFEFDF;
+    border-radius: 14px;
+    // .review-card__header
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    // .review-card__col
+    &__col {
+    }
+    // .review-card__name
+    &__name {
+        display: block;
+        font-family: "HelveticaNeueCyr";
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #444444;
+        margin: 0px 0px 15px 0px;
+    }
+    // .review-card__date
+    &__date {
+        display: block;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FF9933;
+        margin: 0px 0px 17px 0px;
+    }
+    // .review-card__body
+    &__body {
+    }
+    // .review-card__text
+    &__text {
+        font-size: 13px;
+        line-height: 17px;
+        color: #444444;
+    }
+}

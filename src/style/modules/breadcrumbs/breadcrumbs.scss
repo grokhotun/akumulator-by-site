@@ -1,0 +1,25 @@
+.breadcrumbs {
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: auto;
+    max-width: 650px;
+    li + li:before {
+        padding: 0 10px;
+        color: #444444;
+        content: "|";
+    }
+    // .breadcrumbs__item
+    &__item {
+        display: inline;
+        position: relative;
+        text-decoration-line: unset;
+        color: #444444;
+    }
+    // .breadcrumbs__link
+    &__link {
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration-line: underline;
+        color: #FF9933;
+    }
+}

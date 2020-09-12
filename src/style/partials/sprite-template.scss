@@ -1,0 +1,12 @@
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+{{#shapes}}
+.icon-{{base}} {
+    font-size: ({{height.inner}}/10)*1rem;
+    width: ({{width.inner}}/{{height.inner}})*1rem;
+}
+{{/shapes}}

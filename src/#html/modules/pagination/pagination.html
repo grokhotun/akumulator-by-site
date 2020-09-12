@@ -1,0 +1,14 @@
+<div class="pagination">
+    <a href="#" class="pagination__arrow pagination__arrow--prev"></a>
+    <ul class="pagination__list js-pagination">
+        @@for (var i = 0; i < pages.length; i++) {
+            @@if(context.current === `+i+`) {
+                <li class="pagination__item"><a href="" class="pagination__link is-active">`+pages[i]+`</a></li>
+            }
+            @@if(!(context.current === `+i+`)) {
+                <li class="pagination__item"><a href="" class="pagination__link">`+pages[i]+`</a></li>
+            }
+        }
+    </ul>
+    <a href="#" class="pagination__arrow pagination__arrow--next"></a>
+</div>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Отзывы о нас",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body class="">
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html')
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-page">
+                <div class="container">
+                    <div class="page">
+                        <aside class="page__aside page__aside--left aside-page">
+                            <div class="aside-page__catalogue">
+                                @@include('./modules/catalogue/catalogue.html')
+                            </div>
+                            <div class="aside-page__filter">
+                                @@include('./modules/filter/filter.html')
+                            </div>
+                            <div class="aside-page__contacts">
+                                @@include('./modules/contacts/contacts.html')
+                            </div>
+                        </aside>
+                        <main class="page__main main-page">
+                            <div class="main-page__searchbar">
+                                @@include('./modules/searchbar/searchbar.html')
+                            </div>
+                            <div class="main-page__breadcrumbs">
+                                @@include('./modules/breadcrumbs/breadcrumbs.html', {
+                                    "links":['Главная','Отзывы о нас']
+                                })
+                                <a data-html-mover="main-page__header, 1, 767" href="#" class="compare-button btn btn--empty"><span>2 товаров </span>в сравнении</a>
+                            </div>
+                            <div class="main-page__header">
+                                @@include('./modules/title-section/title-section.html', {"title":"Аккумулятор SZNAJDER Carbon EFB 75 R"})
+                            </div>
+                            <div class="main-page__content content-feedbacks">
+                                <div class="content-feedbacks__col col-feedbacks-form">
+                                    <form action="" novalidate method="POST" class="form">
+                                        <input type="hidden"/>
+                                        <div class="col-feedbacks-form__form">
+                                            <div class="form-group">
+                                                <input
+                                                required
+                                                data-pristine-required-message="Введите имя" 
+                                                placeholder="Имя" 
+                                                type="text" 
+                                                class="input-field input-field--big">
+                                            </div>
+                                            <div class="form-group">
+                                                <input 
+                                                required
+                                                data-pristine-required-message="Введите email" 
+                                                data-pristine-email-message="Введите корректный email" 
+                                                data-pristine-type="email" 
+                                                placeholder="Email" 
+                                                type="text" 
+                                                class="input-field input-field--big">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea required data-pristine-required-message="Отзыв не может быть пустым" placeholder="Ваш отзыв" name="" id="" cols="30" rows="10" class="input-field input-field--big input-field--textarea"></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn--primary">Оставить отзыв</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="content-feedbacks__col col-feedbacks-main">
+                                    <div class="col-feedbacks-main__header">
+                                        <p class="col-feedbacks-main__text">
+                                            Поделитесь своим впечатлением о нашей работе. Обязательно рассмотрим претензии, пожелания о сайте, сервисе, товарах!
+                                        </p>
+                                        <div class="col-feedbacks-main__logo">
+                                            <img src="img/onliner.png" alt="Лого сайта отзывов" />
+                                        </div>
+                                    </div>
+                                    <div class="col-feedbacks-main__body">
+                                        @@include('./modules/review-card/review-card.html', {
+                                            "name":"Сергей",
+                                            "date":"2020-01-22 23:45:34",
+                                            "text":"Отличный аккумулятор, по соотношению цена-качество. 6 лет работает на автомобиле гольф 1,9 дизель и еще живой, остаточная емкость 80% от номинала. Есть пробки для контроля уровня электролита и его плотности. Заряжаю на стационарном зарядном устройстве током 0,5 ампер и 16,4 вольт два раза в год, перед зимой и после зимы, контролируя плотность электролита. Лучше были только конвейерные оригинальные аккумуляторы фольксваген (марки варта служили по 10 лет). Режим эксплуатации авто - ежедневные поездки по городу 30-40 км."
+                                        })
+                                        @@include('./modules/review-card/review-card.html', {
+                                            "name":"Сергей",
+                                            "date":"2020-01-22 23:45:34",
+                                            "text":"Отличный аккумулятор, по соотношению цена-качество. 6 лет работает на автомобиле гольф 1,9 дизель и еще живой, остаточная емкость 80% от номинала. Есть пробки для контроля уровня электролита и его плотности. Заряжаю на стационарном зарядном устройстве током 0,5 ампер и 16,4 вольт два раза в год, перед зимой и после зимы, контролируя плотность электролита. Лучше были только конвейерные оригинальные аккумуляторы фольксваген (марки варта служили по 10 лет). Режим эксплуатации авто - ежедневные поездки по городу 30-40 км."
+                                        })
+                                        @@include('./modules/review-card/review-card.html', {
+                                            "name":"Сергей",
+                                            "date":"2020-01-22 23:45:34",
+                                            "text":"Отличный аккумулятор, по соотношению цена-качество. 6 лет работает на автомобиле гольф 1,9 дизель и еще живой, остаточная емкость 80% от номинала. Есть пробки для контроля уровня электролита и его плотности. Заряжаю на стационарном зарядном устройстве током 0,5 ампер и 16,4 вольт два раза в год, перед зимой и после зимы, контролируя плотность электролита. Лучше были только конвейерные оригинальные аккумуляторы фольксваген (марки варта служили по 10 лет). Режим эксплуатации авто - ежедневные поездки по городу 30-40 км."
+                                        })
+                                        @@include('./modules/review-card/review-card.html', {
+                                            "name":"Сергей",
+                                            "date":"2020-01-22 23:45:34",
+                                            "text":"Отличный аккумулятор, по соотношению цена-качество. 6 лет работает на автомобиле гольф 1,9 дизель и еще живой, остаточная емкость 80% от номинала. Есть пробки для контроля уровня электролита и его плотности. Заряжаю на стационарном зарядном устройстве током 0,5 ампер и 16,4 вольт два раза в год, перед зимой и после зимы, контролируя плотность электролита. Лучше были только конвейерные оригинальные аккумуляторы фольксваген (марки варта служили по 10 лет). Режим эксплуатации авто - ежедневные поездки по городу 30-40 км."
+                                        })
+                                        @@include('./modules/review-card/review-card.html', {
+                                            "name":"Сергей",
+                                            "date":"2020-01-22 23:45:34",
+                                            "text":"Отличный аккумулятор, по соотношению цена-качество. 6 лет работает на автомобиле гольф 1,9 дизель и еще живой, остаточная емкость 80% от номинала. Есть пробки для контроля уровня электролита и его плотности. Заряжаю на стационарном зарядном устройстве током 0,5 ампер и 16,4 вольт два раза в год, перед зимой и после зимы, контролируя плотность электролита. Лучше были только конвейерные оригинальные аккумуляторы фольксваген (марки варта служили по 10 лет). Режим эксплуатации авто - ежедневные поездки по городу 30-40 км."
+                                        })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-page__pagination">
+                                @@include('./modules/pagination/pagination.html', {
+                                    "pages":[1,2,3,4,5],
+                                    "current": 0
+                                })
+                            </div>
+                            <div class="main-page__lastseen">
+                                @@include('./modules/lastseen/lastseen.html')
+                            </div>
+                            <div class="main-page__feedback"></div>
+                        </main>
+                        <aside class="page__aside page__aside--right">
+                            <div data-html-mover="main-page__searchbar, 1, 1400" class="aside-page__call-request">
+                                @@include('./modules/call-request-btn/call-request-btn.html')
+                            </div>
+                            <div class="aside-page__selectors">
+                                @@include('./modules/selector/accumulator-selection.html')
+                            </div>
+                            <div class="aside-page__offers">
+                                @@include('./modules/offer-card/offers.html')
+                            </div>
+                            <div data-html-mover="page__aside--left, 2, 1400" class="aside-page__articles">
+                                @@include('./modules/articles/articles.html')
+                            </div>
+                            <div class="aside-page__feedback">
+                                @@include('./modules/feedback/feedback.html')
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./modules/popups/popup-call-request.html')
+    @@include('./modules/popups/popup-fast-order.html')
+    @@include('./template/scripts.html')
+</body>
+</html>

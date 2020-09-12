@@ -1,0 +1,27 @@
+<div id="popup-call-request" class="popup">
+    <div class="popup__wrapper">
+        <div class="popup__body">
+            <a href="" class="popup__close js-popup-close"></a>
+            <span class="popup__title">Заказ звонка</span>
+            <form action="" class="form">
+                <div class="form-group">
+                    <span class="form-group__text">Имя, отчество</span>
+                    <input 
+                        required 
+                        data-pristine-required-message="Введите ваше имя"
+                        placeholder="Имя, отчество" type="text" class="form-group__input input-field">
+                </div>
+                <div class="form-group">
+                    <span class="form-group__text">* Конт. тел.:</span>
+                    <input 
+                        required 
+                        data-pristine-required-message="Введите ваш номер телефона"
+                        placeholder="Ваш телефон"
+                        type="text" class="form-group__input input-field js-mask-phone js-only-digits">
+                </div>
+                <span class="popup__note">C Вами свяжутся в течение 10 минут!</span>
+                <button type="submit" class="popup__button btn btn--primary">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
+</div>

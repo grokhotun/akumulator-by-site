@@ -1,0 +1,11 @@
+<div @@if(context.data){@@data} class="offers">
+    @@include('./modules/offer-card/offer-card.html', {
+        "text":"Бесплатная диагностика акб",
+        "image":"amper"
+    })
+    @@include('./modules/offer-card/offer-card.html', {
+        "text":"Услуги по зарядке АКБ",
+        "image":"tongs",
+        "reverse": true
+    })
+</div>

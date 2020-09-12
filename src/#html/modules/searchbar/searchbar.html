@@ -1,0 +1,10 @@
+<div @@if(context.data){@@data} class="searchbar">
+    <form action="" class="form">
+        <input placeholder="SZNAJDER Carbon EFB 75 R" type="text" class="searchbar__input input-field input-field--big">
+        <button type="submit" class="searchbar__button">Поиск</button>
+        <button type="submit" class="searchbar__button--small">
+            @@include('./mixins/svg-icon.html', {"name":"search"})
+        </button>
+    </form>
+    @@include('./modules/search-tip/search-tip.html')
+</div>

@@ -1,0 +1,110 @@
+.product-card-prev {
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #f4f4f4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    // .product-card-prev__header
+    &__header {
+        margin: 0px 0px 16px 0px;
+    }
+    // .product-card-prev__name
+    &__name {
+        display: block;
+        font-family: "HelveticaNeueCyr";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: $main-text;
+
+        max-width: 173px;
+    }
+    // .product-card-prev__body
+    &__body {
+        margin: 0px 0px 20px 0px;
+    }
+    // .product-card-prev__info
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 0px 18px 0px;
+        & > * {
+            &:not(:last-child) {
+                margin: 0px 20px 0px 0px;
+            }
+        }
+    }
+    // .product-card-prev__photo
+    &__photo {
+        flex: 0 0 118px;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    &__features {
+    }
+    // .product-card-prev__text
+    &__text {
+        font-size: 12px;
+        line-height: 18px;
+        color: $main-text;
+        display: -webkit-box; 
+        -webkit-line-clamp: 4; 
+        -webkit-box-orient: vertical; 
+        overflow-y: hidden;
+    }
+    // .product-card-prev__showmore
+    &__showmore {
+        font-size: 13px;
+        line-height: 18px;
+        text-decoration: underline;
+        color: #ff9933;
+    }
+    // .product-card-prev__prices
+    &__prices {
+        display: flex;
+        justify-content: space-between;
+    }
+    // .product-card-prev__footer
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        a {
+            flex: 0 0 117px;
+        }
+        .btn--primary {
+            padding: 10px 0;
+            font-weight: bold;
+            font-size: 11px;
+            line-height: 13px;
+
+            color: #ffffff;
+        }
+    }
+    // .product-card-prev__button
+    &__button {
+    }
+}
+
+.prices-card-prev {
+    // .prices-card-prev__item
+    &__item {
+    }
+    // .prices-card-prev__price
+    &__price {
+        display: block;
+        font-family: "HelveticaNeueCyr";
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 21px;
+        color: $x-orange;
+    }
+    // .prices-card-prev__note
+    &__note {
+        font-size: 11px;
+        line-height: 18px;
+        color: $x-orange;
+    }
+}

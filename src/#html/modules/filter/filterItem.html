@@ -1,0 +1,12 @@
+@@if(!context.text) {
+<input pattern="/^\d+$/" type="text" class="filter-item__input input-field js-only-digits">
+<span class="filter-item__line"></span>
+<input type="text" class="filter-item__input input-field js-only-digits">
+}
+@@if(context.text) {
+<label for="@@id" class="checkbox">
+    <input id="@@id" type="checkbox">
+    <span class="checkbox__custom"></span>
+    <span class="checkbox__text">@@text</span>
+</label>
+}

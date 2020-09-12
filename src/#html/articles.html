@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Статьи",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body class="">
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html')
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-page">
+                <div class="container">
+                    <div class="page">
+                        <aside class="page__aside page__aside--left aside-page">
+                            <div class="aside-page__catalogue">
+                                @@include('./modules/catalogue/catalogue.html')
+                            </div>
+                            <div class="aside-page__filter">
+                                @@include('./modules/filter/filter.html')
+                            </div>
+                            <div class="aside-page__contacts">
+                                @@include('./modules/contacts/contacts.html')
+                            </div>
+                        </aside>
+                        <main class="page__main main-page">
+                            <div class="main-page__searchbar">
+                                @@include('./modules/searchbar/searchbar.html')
+                            </div>
+                            <div class="main-page__breadcrumbs">
+                                @@include('./modules/breadcrumbs/breadcrumbs.html', {
+                                    "links":['Главная','Статьи']
+                                })
+                                <a data-html-mover="main-page__header, 1, 767" href="#" class="compare-button btn btn--empty"><span>2 товаров </span>в сравнении</a>
+                            </div>
+                            <div class="main-page__header">
+                                @@include('./modules/title-section/title-section.html', {"title":"Статьи"})
+                                <div class="main-page__sorting">
+                                    <div class="sorting">
+                                        <ul class="sorting__list js-sorting-select">
+                                            <li class="sorting__title">Сортировать по:</li>
+                                            <li class="sorting__item">Название</li>
+                                            <li class="sorting__item is-active">Дата</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-page__content">
+                                @@include('./modules/template-card/template-card.html', {
+                                    "title":"Аренда аккумулятора",
+                                    "text":"Аренда автомобильного или лодочного аккумулятора в Минске"
+                                })
+                                @@include('./modules/template-card/template-card.html', {
+                                    "title":"Аренда аккумулятора",
+                                    "text":"Аренда автомобильного или лодочного аккумулятора в Минске"
+                                })
+                                @@include('./modules/template-card/template-card.html', {
+                                    "title":"Аренда аккумулятора",
+                                    "text":"Аренда автомобильного или лодочного аккумулятора в Минске"
+                                })
+                                @@include('./modules/template-card/template-card.html', {
+                                    "title":"Аренда аккумулятора",
+                                    "text":"Аренда автомобильного или лодочного аккумулятора в Минске"
+                                })
+                                @@include('./modules/template-card/template-card.html', {
+                                    "title":"Аренда аккумулятора",
+                                    "text":"Аренда автомобильного или лодочного аккумулятора в Минске"
+                                })
+                                @@include('./modules/template-card/template-card.html', {
+                                    "title":"Аренда аккумулятора",
+                                    "text":"Аренда автомобильного или лодочного аккумулятора в Минске"
+                                })
+                                @@include('./modules/template-card/template-card.html', {
+                                    "title":"Аренда аккумулятора",
+                                    "text":"Аренда автомобильного или лодочного аккумулятора в Минске"
+                                })
+                                @@include('./modules/template-card/template-card.html', {
+                                    "title":"Аренда аккумулятора",
+                                    "text":"Аренда автомобильного или лодочного аккумулятора в Минске"
+                                })
+                                @@include('./modules/template-card/template-card.html', {
+                                    "title":"Аренда аккумулятора",
+                                    "text":"Аренда автомобильного или лодочного аккумулятора в Минске"
+                                })
+                            </div>
+                            <div class="main-page__pagination">
+                                @@include('./modules/pagination/pagination.html', {
+                                    "pages":[1,2,3,4,5],
+                                    "current": 0
+                                })
+                            </div>
+                            <div class="main-page__lastseen">
+                                @@include('./modules/lastseen/lastseen.html')
+                            </div>
+                            <div class="main-page__feedback"></div>
+                        </main>
+                        <aside class="page__aside page__aside--right">
+                            <div data-html-mover="main-page__searchbar, 1, 1400" class="aside-page__call-request">
+                                @@include('./modules/call-request-btn/call-request-btn.html')
+                            </div>
+                            <div class="aside-page__selectors">
+                                @@include('./modules/selector/accumulator-selection.html')
+                            </div>
+                            <div class="aside-page__offers">
+                                @@include('./modules/offer-card/offers.html')
+                            </div>
+                            <div data-html-mover="page__aside--left, 2, 1400" class="aside-page__articles">
+                                @@include('./modules/articles/articles.html')
+                            </div>
+                            <div data-html-mover="page__main, last, 1021" class="aside-page__feedback">
+                                @@include('./modules/feedback/feedback.html')
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./modules/popups/popup-call-request.html')
+    @@include('./modules/popups/popup-fast-order.html')
+    @@include('./template/scripts.html')
+</body>
+</html>

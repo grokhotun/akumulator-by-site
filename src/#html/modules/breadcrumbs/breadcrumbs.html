@@ -1,0 +1,12 @@
+<ul class="breadcrumbs">
+    @@for (var i = 0; i < links.length; i++) {
+        @@if(!(`+i+` === (links.length - 1))) {
+            <li class="breadcrumbs__item">
+                <a href="" class="breadcrumbs__link">`+links[i]+`</a>
+            </li>
+        }
+        @@if(`+i+` === (links.length - 1) ) {
+            <li class="breadcrumbs__item">`+links[i]+`</li>
+        }
+    }
+</ul>

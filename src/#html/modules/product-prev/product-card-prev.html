@@ -1,0 +1,31 @@
+<div class="product-card-prev">
+    <div class="product-card-prev__header">
+        <span class="product-card-prev__name">@@name</span>
+    </div>
+    <div class="product-card-prev__body">
+        <div class="product-card-prev__info">
+            <div class="product-card-prev__photo">
+                <img src="@@photo" alt="Фото аккумулятора" />
+            </div>
+            <div class="product-card-prev__features">
+                <p class="product-card-prev__text">@@text</p>
+                <a href="#" class="product-card-prev__showmore">подробнее</a>
+            </div>
+        </div>
+        <div class="product-card-prev__prices prices-card-prev">
+            @@include("./mixins/price-block.html", {
+                "price":"@@fullprice"
+            })
+            @@if(context.discountprice) {
+                @@include("./mixins/price-block.html", {
+                    "price":"@@discountprice",
+                    "note":"при сдаче старого"
+                })
+            }
+        </div>
+    </div>
+    <div class="product-card-prev__footer">
+        <a href="#popup-fast-order" class="product-card-prev__button btn btn--primary js-popup-open">Купить в 1 клик</a>
+        <a href="#" class="product-card-prev__button btn btn--primary">В корзину</a>
+    </div>
+</div>

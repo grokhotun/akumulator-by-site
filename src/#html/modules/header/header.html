@@ -1,0 +1,189 @@
+<header class="s-header">
+    <div class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="three-dots">
+                    <div class="three-dots__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="three-dots__body"></div>
+                </div>           
+                <div class="top-header">
+                    <nav data-html-mover="three-dots__body, 0, 1400" class="js-three-dots-body top-header__menu">
+                        <span class="triangle"></span>
+                        <ul class="top-header__list">
+                            <li class="top-header__item">
+                                <a href="links.html" class="top-header__link">Доставка и оплата</a>
+                            </li>
+                            <li class="top-header__item">
+                                <a href="index.html" class="top-header__link">Гарантии и сервис</a>
+                            </li>
+                            <li class="top-header__item">
+                                <a href="index.html" class="top-header__link">Скидки и акции</a>
+                            </li>
+                            <li class="top-header__item">
+                                <a href="index.html" class="top-header__link">Услуги</a>
+                            </li>
+                            <li class="top-header__item">
+                                <a href="index.html" class="top-header__link">Статьи</a>
+                            </li>
+                            <li class="top-header__item">
+                                <a href="index.html" class="top-header__link">Отзывы о нас</a>
+                            </li>
+                            <li class="top-header__item">
+                                <a href="index.html" class="top-header__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="top-header__action cart-top-header">
+                        <div class="cart-top-header__button  js-cart-btn">
+                            @@include('./mixins/svg-icon.html', {"name":"cart", mod:"is-full"})
+                            <span class="top-header__text">Корзина</span>
+                            <span class="cart-top-header__counter">2</span>
+                        </div>
+                        <div class="cart-top-header__content">
+                            @@include('./modules/cart/cart.html', {"full": true})
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bot">
+            <div class="container">
+                <div class="bot-header">
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                    <div class="burger-menu">
+                        <div class="burger-menu__body">
+                            <div class="burger-menu__logo">
+                                <img src="./img/logo.svg" alt="Лого" />
+                            </div>
+                            @@include('./modules/call-request-btn/call-request-btn.html')
+                            <div class="burger-menu__contacts">
+                                <div class="contacts-bot-header__item">
+                                    <span>A1</span>
+                                    <a href="tel:8 (029) 653 56 59" class="contacts-bot-header__link">8 (029) 653 56 59</a>
+                                </div>
+                                <div class="contacts-bot-header__item">
+                                    <span>МТС</span>
+                                    <a href="tel:8 (029) 767 51 0" class="contacts-bot-header__link">8 (029) 767 51 03</a>
+                                </div>
+                                <div class="contacts-bot-header__item">
+                                    <span>Life</span>
+                                    <a href="tel:8 (025) 747 37 64" class="contacts-bot-header__link">8 (025) 747 37 64</a>
+                                </div>
+                                <div class="contacts-bot-header__item">
+                                    <span>Факс</span>
+                                    <a href="tel:8 (017) 336 00 44" class="contacts-bot-header__link">8 (017) 336 00 44</a>
+                                </div>
+                            </div>
+                            <div class="burger-menu__categories js-burger-menu">
+                                <div class="categories-burger-menu">
+                                    <div class="categories-burger-menu__header">
+                                        <span class="categories-burger-menu__title">Аккумуляторы</span>
+                                    </div>
+                                    <div class="categories-burger-menu__body">
+                                        <ul class="categories-burger-menu__list">
+                                            <li><a href="" class="categories-burger-menu__link">Аккумуляторы для легковых авто</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Аккумуляторы для легковых авто</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Аккумуляторы для легковых авто</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Аккумуляторы для легковых авто</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Аккумуляторы для легковых авто</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Аккумуляторы для легковых авто</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Аккумуляторы для инвалидных колясок</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Аккумуляторы для легковых авто</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="categories-burger-menu">
+                                    <div class="categories-burger-menu__header">
+                                        <span class="categories-burger-menu__title">Зарядные устройства</span>
+                                        <span class="categories-burger-menu__arrow"></span>
+                                    </div>
+                                    <div class="categories-burger-menu__body">
+                                        <ul class="categories-burger-menu__list">
+                                            <li><a href="" class="categories-burger-menu__link">Зарядные устройства для легковых авто</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Зарядные устройства для легковых авто</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Зарядные устройства для легковых авто</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Зарядные устройства для легковых авто</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Зарядные устройства для легковых авто</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Зарядные устройства для легковых авто</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Зарядные устройства для инвалидных колясок</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Зарядные устройства для легковых авто</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="categories-burger-menu">
+                                    <div class="categories-burger-menu__header">
+                                        <span class="categories-burger-menu__title">Аксессуары</span>
+                                        <span class="categories-burger-menu__arrow"></span>
+                                    </div>
+                                    <div class="categories-burger-menu__body">
+                                        <ul class="categories-burger-menu__list">
+                                            <li><a href="" class="categories-burger-menu__link">Аксессуары для легковых авто</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Аксессуары для легковых авто</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Аксессуары для легковых авто</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Аксессуары для легковых авто</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Аксессуары для легковых авто</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Аксессуары для легковых авто</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Аксессуары для инвалидных колясок</a></li>
+                                            <li><a href="" class="categories-burger-menu__link">Аксессуары для легковых авто</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="links.html" class="bot-header__logo">
+                        <img src="img/logo.svg" alt="Лого" />
+                    </a>
+                    <div class="bot-header__menu menu-bot-header">
+                        <nav class="menu-bot-header__menu">
+                            <ul class="menu-bot-header__list">
+                                <li class="menu-bot-header__item menu-bot-header__item--first">
+                                    <a href="#menu-1" class="menu-bot-header__link">Аккумуляторы</a>
+                                </li>
+                                <li class="menu-bot-header__item menu-bot-header__item--second">
+                                    <a href="#menu-2" class="menu-bot-header__link">Зарядные устройства</a>
+                                </li>
+                                <li class="menu-bot-header__item menu-bot-header__item--third">
+                                    <a href="#menu-3" class="menu-bot-header__link">Аксессуары</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="menu-bot-header__content">
+                            @@include('./modules/catalog-nav/catalog-nav.html', {"mod":"first", "id":"menu-1"})
+                            @@include('./modules/catalog-nav/catalog-nav.html', {"mod":"second", "id":"menu-2"})
+                            @@include('./modules/catalog-nav/catalog-nav.html', {"mod":"third", "id":"menu-3"})
+                        </div>
+                    </div>
+                    <div class="bot-header__work-hours">
+                        @@include('./mixins/svg-icon.html', {"name":"clock", "mod":""})
+                        <span class="bot-header__time">8:00 - 22:00</span>
+                    </div>
+                    <div class="bot-header__contacts contacts-bot-header">
+                        <div class="contacts-bot-header__item">
+                            <span>A1</span>
+                            <a href="tel:8 (029) 653 56 59" class="contacts-bot-header__link">8 (029) 653 56 59</a>
+                        </div>
+                        <div class="contacts-bot-header__item">
+                            <span>МТС</span>
+                            <a href="tel:8 (029) 767 51 0" class="contacts-bot-header__link">8 (029) 767 51 03</a>
+                        </div>
+                        <div class="contacts-bot-header__item">
+                            <span>Life</span>
+                            <a href="tel:8 (025) 747 37 64" class="contacts-bot-header__link">8 (025) 747 37 64</a>
+                        </div>
+                        <div class="contacts-bot-header__item">
+                            <span>Факс</span>
+                            <a href="tel:8 (017) 336 00 44" class="contacts-bot-header__link">8 (017) 336 00 44</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,41 @@
+<div id="popup-fast-order" class="popup">
+    <div class="popup__wrapper">
+        <div class="popup__body">
+            <a href="" class="popup__close js-popup-close"></a>
+            <span class="popup__title">ЗАКАЗАТЬ Аккумулятор SZNAJDER Carbon EFB 75 R</span>
+            <div class="popup__order-item">
+                <div class="cart-item">
+                    <div class="cart-item__content">
+                        <div class="cart-item__body">
+                            <div class="cart-item__photo">
+                                <img src="img/products/1.jpg" alt="Фото аккумулятора" />
+                            </div>
+                            <div class="cart-item__info">
+                                @@include('./modules/quantity-selector/quantity-selector.html')
+                                <div class="cart-item__price">200<span>руб.</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="" class="form">
+                <div class="form-group">
+                    <span class="form-group__text">Имя, отчество</span>
+                    <input 
+                        required 
+                        data-pristine-required-message="Введите ваше имя"
+                        placeholder="Имя, отчество" type="text" class="form-group__input input-field">
+                </div>
+                <div class="form-group">
+                    <span class="form-group__text">* Конт. тел.:</span>
+                    <input 
+                        placeholder="Ваш телефон"
+                        required 
+                        data-pristine-required-message="Введите ваш номер телефона"
+                        type="text" class="form-group__input input-field js-mask-phone">
+                </div>
+                <button type="submit" class="popup__button btn btn--primary">Заказать</button>
+            </form>
+        </div>
+    </div>
+</div>

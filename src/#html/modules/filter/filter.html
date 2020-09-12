@@ -1,0 +1,88 @@
+<div class="filter">
+    <form action="" class="form">
+        <div class="filter__header">
+            <span class="filter__title">Подбор аккумулятора</span>
+        </div>
+        <div class="filter__body">
+            <div class="filter-item">
+                <div class="filter-item__header">
+                    <span class="filter-item__title">Цена</span>
+                </div>
+                <div class="filter-item__body">
+                    @@include('./modules/filter/filterItem.html')
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-item__header">
+                    <span class="filter-item__title">Длина, мм</span>
+                </div>
+                <div class="filter-item__body">
+                    @@include('./modules/filter/filterItem.html')
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-item__header">
+                    <span class="filter-item__title">Полярность</span>
+                </div>
+                <div class="filter-item__body filter-item__body--checkbox">
+                    @@include('./modules/filter/filterItem.html', {"text":"обратная","id":"a-1"})
+                    @@include('./modules/filter/filterItem.html', {"text":"прямая","id":"a-2"})
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-item__header">
+                    <span class="filter-item__title">Емкость, Ач</span>
+                </div>
+                <div class="filter-item__body">
+                    @@include('./modules/filter/filterItem.html')
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-item__header">
+                    <span class="filter-item__title">Ширина, мм</span>
+                </div>
+                <div class="filter-item__body">
+                    @@include('./modules/filter/filterItem.html')
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-item__header">
+                    <span class="filter-item__title">Напряжение</span>
+                </div>
+                <div class="filter-item__body filter-item__body--checkbox">
+                    @@include('./modules/filter/filterItem.html', {"text":"6V","id":"a-6"})
+                    @@include('./modules/filter/filterItem.html', {"text":"12V","id":"a-7"})
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-item__header">
+                    <span class="filter-item__title">Пусковой ток</span>
+                </div>
+                <div class="filter-item__body">
+                    @@include('./modules/filter/filterItem.html')
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-item__header">
+                    <span class="filter-item__title">Высота</span>
+                </div>
+                <div class="filter-item__body">
+                    @@include('./modules/filter/filterItem.html')
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-item__header">
+                    <span class="filter-item__title">Тип батареи</span>
+                </div>
+                <div class="filter-item__body filter-item__body--checkbox">
+                    @@include('./modules/filter/filterItem.html', {"text":"стандартная","id":"a-3"})
+                    @@include('./modules/filter/filterItem.html', {"text":"EFB","id":"a-4"})
+                    @@include('./modules/filter/filterItem.html', {"text":"EGM","id":"a-5"})
+                </div>
+            </div>
+        </div>
+        <div class="filter__footer">
+            <button type="submit" class="filter__button btn btn--primary">Подобрать</button>
+        </div>
+    </form>
+</div>

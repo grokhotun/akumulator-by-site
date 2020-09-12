@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Главная",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body class="">
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html')
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-home-page">
+                <div class="container">
+                    <div class="home-page">
+                        <aside class="home-page__aside home-page__aside--left aside-home-page">
+                            <div data-html-mover="home-page__aside--right, 1, 767" class="aside-home-page__catalogue">
+                                @@include('./modules/catalogue/catalogue.html')
+                            </div>
+                            <div class="aside-home-page__filter">
+                                @@include('./modules/filter/filter.html')
+                            </div>
+                            <div data-html-mover="drop-section__contacts, 0, 1021" class="aside-home-page__contacts">
+                                @@include('./modules/contacts/contacts.html')
+                            </div>
+                        </aside>
+                        <main class="home-page__main main-home-page">
+                            <div data-html-mover="home-page__aside--right, 0, 1021" class="main-home-page__searchbar">
+                                @@include('./modules/searchbar/searchbar.html')
+                            </div>
+                            <div data-html-mover="home-page__aside--right, 1, 1021" class="main-home-page__banner">
+                                <div class="banner-slider">
+                                    <div class="banner-slider__body">
+                                        <div class="banner-slider__container">
+                                            <div class="banner-slider__wrapper swiper-wrapper">
+                                                <div class="banner-slider__slide swiper-slide">
+                                                    <div class="banner-slider__col">
+                                                        <span class="banner-slider__title">Установим!</span>
+                                                        <span class="banner-slider__text">Бесплатная профессиональная установка аккумулятора!</span>
+                                                    </div>
+                                                    <div class="banner-slider__col">
+                                                        <div class="banner-slider__image"><img src="./img/banner/img1.png" alt="Фото инструментов" /></div>
+                                                    </div>
+                                                </div>
+                                                <div class="banner-slider__slide swiper-slide">
+                                                    <div class="banner-slider__col">
+                                                        <span class="banner-slider__title">Проверим!</span>
+                                                        <span class="banner-slider__text">Бесплатная проверка работы стартера и генератора!</span>
+                                                    </div>
+                                                    <div class="banner-slider__col">
+                                                        <div class="banner-slider__image"><img src="./img/banner/img2.jpg" alt="Фото аккумулятора" /></div>
+                                                    </div>
+                                                </div>
+                                                <div class="banner-slider__slide swiper-slide">
+                                                    <div class="banner-slider__col">
+                                                        <span class="banner-slider__title">Установим!</span>
+                                                        <span class="banner-slider__text">Бесплатная профессиональная установка аккумулятора!</span>
+                                                    </div>
+                                                    <div class="banner-slider__col">
+                                                        <div class="banner-slider__image"><img src="./img/banner/img1.png" alt="Фото инструментов" /></div>
+                                                    </div>
+                                                </div>
+                                                <div class="banner-slider__slide swiper-slide">
+                                                    <div class="banner-slider__col">
+                                                        <span class="banner-slider__title">Проверим!</span>
+                                                        <span class="banner-slider__text">Бесплатная проверка работы стартера и генератора!</span>
+                                                    </div>
+                                                    <div class="banner-slider__col">
+                                                        <div class="banner-slider__image"><img src="./img/banner/img2.jpg" alt="Фото аккумулятора" /></div>
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="banner-slider__pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-html-mover="drop-section__advantages, 0, 1021" class="main-home-page__advantages">
+                                <div class="advantages">
+                                    <div class="advantages__item">
+                                        <span class="advantages__number">1</span>
+                                        <span class="advantages__text">Бесплатная доставка по всем городам Беларуси.</span>
+                                    </div>
+                                    <div class="advantages__item">
+                                        <span class="advantages__number">2</span>
+                                        <span class="advantages__text">Профессиональная установка на авто.</span>
+                                    </div>
+                                    <div class="advantages__item">
+                                        <span class="advantages__number">3</span>
+                                        <span class="advantages__text">Проверка работы автомобильного стартера и генератора.</span>
+                                    </div>
+                                    <div class="advantages__item">
+                                        <span class="advantages__number">4</span>
+                                        <span class="advantages__text">Только «свежие» аккумуляторы!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-html-mover="drop-section__novelty, 0, 1021" class="main-home-page__novelty">
+                                @@include('./modules/novelty/novelty.html')
+                            </div>
+                            <div data-html-mover="drop-section__lastseen, 0, 1400" class="main-home-page__lastseen">
+                                @@include('./modules/lastseen/lastseen.html')
+                            </div>
+                        </main>
+                        <aside class="home-page__aside home-page__aside--right">
+                            <div class="aside-home-page__call-request">
+                                @@include('./modules/call-request-btn/call-request-btn.html')
+                            </div>
+                            <div class="aside-home-page__selectors">
+                                @@include('./modules/selector/accumulator-selection.html')
+                            </div>
+                            <div class="aside-home-page__offers">
+                                @@include('./modules/offer-card/offers.html')
+                            </div>
+                            <div data-html-mover="drop-section__articles, last, 1021" class="aside-home-page__articles">
+                                @@include('./modules/articles/articles.html')
+                            </div>
+                            <div data-html-mover="drop-section__feedback, last, 1021" class="aside-home-page__feedback">
+                                @@include('./modules/feedback/feedback.html')
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="drop-section">
+                        <div class="drop-section__advantages"></div>
+                        <div class="drop-section__row">
+                            <div class="drop-section__col drop-section__col--left">
+                                <div class="drop-section__contacts"></div>
+                                <div class="drop-section__lastseen"></div>
+                                <div class="drop-section__feedback"></div>
+                            </div>
+                            <div class="drop-section__col drop-section__col--right">
+                                <div class="drop-section__novelty"></div>
+                                <div class="drop-section__articles"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./modules/popups/popup-call-request.html')
+    @@include('./modules/popups/popup-fast-order.html')
+    @@include('./template/scripts.html')
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Сравнение товаров",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body class="">
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html')
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-page">
+                <div class="container">
+                    <div class="page compare-page">
+                        <aside class="page__aside page__aside--left aside-page">
+                            <div class="aside-page__catalogue compare-page__catalogue">
+                                @@include('./modules/catalogue/catalogue.html')
+                            </div>
+                            <div class="aside-page__contacts">
+                                @@include('./modules/contacts/contacts.html')
+                            </div>
+                        </aside>
+                        <main class="page__main main-page">
+                            <div class="main-page__searchbar">
+                                @@include('./modules/searchbar/searchbar.html')
+                            </div>
+                            <div class="main-page__breadcrumbs">
+                                @@include('./modules/breadcrumbs/breadcrumbs.html', {
+                                    "links":['Главная','Сравнение']
+                                })
+                            </div>
+                            <div class="main-page__header compare-page__header">
+                                @@include('./modules/title-section/title-section.html', {"title":"Сравнение товара"})
+                                <a href="#" class="btn btn--empty">Очистить</a>
+                            </div>
+                            <div class="main-page__content content-compare">
+                                <div class="content-compare__body">
+                                    <div class="content-compare__card compare-card">
+                                        <div class="compare-card__header">
+                                            <div class="compare-card__row compare-card__row--name">
+                                                <div class="compare-card__name">Аккумулятор SZNAJDER Carbon EFB 75 R</div>
+                                            </div>
+                                            <div class="compare-card__row">
+                                                <div class="compare-card__photo">
+                                                    <img src="img/products/1.jpg" alt="Фото товара" />
+                                                </div>
+                                                <div class="compare-card__amount">
+                                                    @@include('./modules/quantity-selector/quantity-selector.html')
+                                                </div>
+                                            </div>
+                                            <div class="compare-card__row compare-card__row--prices">
+                                                <div class="compare-card__prices">
+                                                    @@include('./mixins/price-block.html', {
+                                                        "price":"200"
+                                                    })
+                                                    @@include('./mixins/price-block.html', {
+                                                        "price":"180",
+                                                        "note":"при сдаче старого"
+                                                    })
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="compare-card__buttons">
+                                            <a href="" class="btn btn--primary">В корзину</a>
+                                            <a href="" class="showmore">Подробнее</a>
+                                        </div>
+                                        <div class="compare-card__spec">
+                                            <ul class="specification-table">
+                                                <li class="specification-table__item">
+                                                    <span class="specification-table__name">Страна:</span>
+                                                    <span class="specification-table__value">Польша</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__name">Производитель:</span>
+                                                    <span class="specification-table__value">Sznajder</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__name">Полярность:</span>
+                                                    <span class="specification-table__value">обратная</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__name">Пусковой ток:</span>
+                                                    <span class="specification-table__value">750</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__name">Емкость, Ач:</span>
+                                                    <span class="specification-table__value">75</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__name">Ширина, мм:</span>
+                                                    <span class="specification-table__value">175</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__name">Высота, мм:</span>
+                                                    <span class="specification-table__value">175</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__name">Длинна, мм:</span>
+                                                    <span class="specification-table__value">278</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__name">Гарантия:</span>
+                                                    <span class="specification-table__value">24 месяца</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__name">Напряжение, В:</span>
+                                                    <span class="specification-table__value">12V</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__name">Заводской код:</span>
+                                                    <span class="specification-table__value">EFB</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <span class="compare-card__close"></span>
+                                    </div>
+                                    <div class="content-compare__card compare-card">
+                                        <div class="compare-card__header">
+                                            <div class="compare-card__row compare-card__row--name">
+                                                <div class="compare-card__name">Аккумулятор SZNAJDER Carbon EFB 75 R</div>
+                                            </div>
+                                            <div class="compare-card__row">
+                                                <div class="compare-card__photo">
+                                                    <img src="img/products/1.jpg" alt="Фото товара" />
+                                                </div>
+                                                <div class="compare-card__amount">
+                                                    @@include('./modules/quantity-selector/quantity-selector.html')
+                                                </div>
+                                            </div>
+                                            <div class="compare-card__row">
+                                                <div class="compare-card__prices">
+                                                    @@include('./mixins/price-block.html', {
+                                                        "price":"200"
+                                                    })
+                                                    @@include('./mixins/price-block.html', {
+                                                        "price":"180",
+                                                        "note":"при сдаче старого"
+                                                    })
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="compare-card__buttons">
+                                            <a href="" class="btn btn--primary">В корзину</a>
+                                            <a href="" class="showmore">Подробнее</a>
+                                        </div>
+                                        <div class="compare-card__spec">
+                                            <ul class="specification-table">
+                                                <li class="specification-table__item">
+                                                    <span class="specification-table__value">Польша</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__value">Sznajder</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__value">обратная</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__value">750</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__value">75</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__value">175</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__value">175</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__value">278</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__value">24 месяца</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__value">12V</span>
+                                                </li>
+                                                <li class="product-card-full__item specification-table__item">
+                                                    <span class="specification-table__value">EFB</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <span class="compare-card__close m-icon m-icon--close"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-page__lastseen">
+                                @@include('./modules/lastseen/lastseen.html')
+                            </div>
+                            <div class="main-page__feedback"></div>
+                        </main>
+                        <aside class="page__aside page__aside--right">
+                            <div data-html-mover="main-page__searchbar, 1, 1400" class="aside-page__call-request">
+                                @@include('./modules/call-request-btn/call-request-btn.html')
+                            </div>
+                            <div class="aside-page__selectors">
+                                @@include('./modules/selector/accumulator-selection.html')
+                            </div>
+                            <div class="aside-page__offers">
+                                @@include('./modules/offer-card/offers.html')
+                            </div>
+                            <div data-html-mover="page__aside--left, 1, 1400" class="aside-page__articles">
+                                @@include('./modules/articles/articles.html')
+                            </div>
+                            <div data-html-mover="page__main, last, 1021" class="aside-page__feedback">
+                                @@include('./modules/feedback/feedback.html')
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./modules/popups/popup-call-request.html')
+    @@include('./modules/popups/popup-fast-order.html')
+    @@include('./template/scripts.html')
+</body>
+</html>

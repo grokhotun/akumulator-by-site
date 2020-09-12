@@ -1,0 +1,107 @@
+<div class="product-card-full">
+    <div class="product-card-full__content">
+        <div class="product-card-full__info">
+            <div class="product-card-full__photo">
+                <div class="product-card-full__image">
+                    <img src="img/products/1.jpg" alt="Фото продукта" />
+                </div>
+            </div>
+            <div class="product-card-full__details product-details">
+                <div class="product-details__price">
+                    @@include("./mixins/price-block.html", {
+                        "price":"200",
+                    })
+                    @@include("./mixins/price-block.html", {
+                        "price":"180",
+                        "note":"при сдаче старого"
+                    })
+                    @@include("./modules/quantity-selector/quantity-selector.html")
+                </div>
+                <div class="product-details__buttons"></div>
+                <div class="product-details__specification"></div>
+                <a href="#" class="product-card-full__button btn btn--primary">В корзину</a>
+                <a href="#popup-fast-order" class="product-card-full__button btn btn--primary js-popup-open">Купить в 1 клик</a>
+                <div class="product-card-full__specification">
+                    <ul class="product-card-full__list specification-table">
+                        <li class="specification-table__item">
+                            <span class="specification-table__name">Страна:</span>
+                            <span class="specification-table__value">Польша</span>
+                        </li>
+                        <li class="product-card-full__item specification-table__item">
+                            <span class="specification-table__name">Производитель:</span>
+                            <span class="specification-table__value">Sznajder</span>
+                        </li>
+                        <li class="product-card-full__item specification-table__item">
+                            <span class="specification-table__name">Полярность:</span>
+                            <span class="specification-table__value">обратная</span>
+                        </li>
+                        <li class="product-card-full__item specification-table__item">
+                            <span class="specification-table__name">Пусковой ток:</span>
+                            <span class="specification-table__value">750</span>
+                        </li>
+                        <li class="product-card-full__item specification-table__item">
+                            <span class="specification-table__name">Емкость, Ач:</span>
+                            <span class="specification-table__value">75</span>
+                        </li>
+                        <li class="product-card-full__item specification-table__item">
+                            <span class="specification-table__name">Ширина, мм:</span>
+                            <span class="specification-table__value">175</span>
+                        </li>
+                        <li class="product-card-full__item specification-table__item">
+                            <span class="specification-table__name">Высота, мм:</span>
+                            <span class="specification-table__value">175</span>
+                        </li>
+                        <li class="product-card-full__item specification-table__item">
+                            <span class="specification-table__name">Длинна, мм:</span>
+                            <span class="specification-table__value">278</span>
+                        </li>
+                        <li class="product-card-full__item specification-table__item">
+                            <span class="specification-table__name">Гарантия:</span>
+                            <span class="specification-table__value">24 месяца</span>
+                        </li>
+                        <li class="product-card-full__item specification-table__item">
+                            <span class="specification-table__name">Напряжение, В:</span>
+                            <span class="specification-table__value">12V</span>
+                        </li>
+                        <li class="product-card-full__item specification-table__item">
+                            <span class="specification-table__name">Заводской код:</span>
+                            <span class="specification-table__value">EFB</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="product-card-full__description product-description">
+            <div data-html-mover="product-full-page__header, 2, 767" class="product-description__is-comparing">
+                @@include("./modules/filter/filterItem.html", {"text":"В сравнении","id":"c-1"})
+            </div>
+            <p class="template-text">Карбоновые EFB аккумуляторы предназначены главным образом для автомобилей с системой START-STOP. Они также идеально подходят для обычных автомобилей в качестве аккумуляторов премиум-класса. Их безотказная работа, высокая долговечность и превосходные электрические параметры были достигнуты благодаря использованию более толстых электродов, изготовленных по технологии 3Dx и применению современных углеродных добавок.</p>
+            <p class="template-text"> Основные особенности, которые отличают группу аккумуляторов START-STOP Carbon EFB:</p>
+            <ul class="product-description__list template-list">
+                <li class="product-description__item template-list__item">пространственная структура (3Dx) решетки,   </li>
+                <li class="product-description__item template-list__item">высокая коррозионная стойкость достигается благодаря специальной пластической формовке свинцовой ленты, то есть: 6-кратный прокат и 7-й этап калибровки,</li>
+                <li class="product-description__item template-list__item">отличное принятие заряда благодаря использованию добавок из графита углерода,</li>
+                <li class="product-description__item template-list__item">намного лучшие рабочие характеристики с точки зрения частичного заряда и глубокого разряда по сравнению с традиционными свинцово-кислотными батареями,</li>
+                <li class="product-description__item template-list__item">увеличенная цикличность благодаря инновационной технологии добавок, которая улучшает адгезионную способность электродных материалов, </li>
+                <li class="product-description__item template-list__item">увеличена стартовая способность.</li>
+            </ul>
+            <p class="template-text template-text--bold">Бесплатная доставка, установка, проверка электрики, старый в зачет.</p>
+        </div>
+    </div>
+    <div class="product-card-full__reviews product-reviews">
+        <div class="product-reviews__header">
+            <div class="product-reviews__amount">
+                <span>1</span>
+                <span>отзыв</span>
+            </div>
+            <a href="#" class="product-reviews__button btn btn--primary">Оставить отзыв</a>
+        </div>
+        <div class="product-reviews__body">
+            @@include('./modules/review-card/review-card.html', {
+                "name":"Сергей",
+                "date":"2020-01-22 23:45:34",
+                "text":"Отличный аккумулятор, по соотношению цена-качество. 6 лет работает на автомобиле гольф 1,9 дизель и еще живой, остаточная емкость 80% от номинала. Есть пробки для контроля уровня электролита и его плотности. Заряжаю на стационарном зарядном устройстве током 0,5 ампер и 16,4 вольт два раза в год, перед зимой и после зимы, контролируя плотность электролита. Лучше были только конвейерные оригинальные аккумуляторы фольксваген (марки варта служили по 10 лет). Режим эксплуатации авто - ежедневные поездки по городу 30-40 км."
+            })
+        </div>
+    </div>
+</div>

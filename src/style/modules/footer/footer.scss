@@ -1,0 +1,118 @@
+.footer {
+    // .footer__top
+
+    &__top {
+        padding: 75px 0;
+    }
+
+    // .footer__bot
+
+    &__bot {
+        background-color: #444444;
+        padding: 40px 0;
+    }
+}
+
+.footer-slider {
+    position: relative;
+    // .footer-slider__container
+    &__container {
+        max-width: 1500px;
+        @media (max-width: $maxwidth2) {
+            max-width: 800px;
+        }
+    }
+
+    // .footer-slider__wrapper
+
+    &__wrapper {
+        align-items: center;
+    }
+
+    // .footer-slider__slide
+
+    &__slide {
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__button {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        z-index: 5;
+        top: 50%;
+        transform: translateY(-50%);
+        &--prev {
+            left: 0;
+            .icon-arrow-left {
+                width: 33px;
+                height: 114px;
+            }
+        }
+        &--next {
+            right: 0;
+            .icon-arrow-right {
+                width: 33px;
+                height: 114px;
+            }
+        }
+    }
+}
+
+.bot-footer {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $maxwidth5) {
+        justify-content: center;
+    }
+    // .bot-footer__col
+    &__col {
+    }
+}
+
+.col-socials {
+    @media (max-width: $maxwidth5) {
+        text-align: center;
+    }
+    & > * {
+        &:not(:last-child) {
+            margin: 0px 0px 35px 0px;
+        }
+    }
+    // .col-socials__row
+    &__row {
+        & > a {
+            display: inline-block;
+            &:not(:last-child) {
+                margin: 0px 23px 0px 0px;
+            }
+        }
+    }
+
+    // .col-socials__rights
+
+    &__rights {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.03em;
+        text-transform: lowercase;
+        color: #ffffff;
+    }
+}
+
+.col-tax-info {
+    max-width: 274px;
+    @media (max-width: $maxwidth5) {
+        display: none;
+    }
+    &__text {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.03em;
+        color: #ffffff;
+    }
+}

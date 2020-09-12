@@ -1,0 +1,25 @@
+<div @@if(context.data){@@data} class="accumulator-selection">
+    <span class="accumulator-selection__title">Подбор аккумулятора по авто</span>
+    <div class="accumulator-selection__body">
+        @@include('./modules/selector/selector-item.html', {
+            "title":"Тип транспорта",
+            "options":['Для легковых','Для грузовых', 'Для мотоциклов и скутеров', 'Для автобусов', 'Для электромобилей']
+        })
+        @@include('./modules/selector/selector-item.html', {
+            "title":"Марка",
+            "options":['Для легковых','Для грузовых', 'Для мотоциклов и скутеров', 'Для автобусов', 'Для электромобилей'],
+            "disabled":true
+        })
+        @@include('./modules/selector/selector-item.html', {
+            "title":"Модель",
+            "options":['Для легковых','Для грузовых', 'Для мотоциклов и скутеров', 'Для автобусов', 'Для электромобилей'],
+            "disabled":true
+        })
+        @@include('./modules/selector/selector-item.html', {
+            "title":"Двигатель",
+            "options":['Для легковых','Для грузовых', 'Для мотоциклов и скутеров', 'Для автобусов', 'Для электромобилей'],
+            "disabled":true
+        })
+        <button type="submit" class="accumulator-selection__button btn btn--primary">Подобрать</button>
+    </div>
+</div>

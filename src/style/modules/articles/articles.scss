@@ -1,0 +1,13 @@
+.articles {
+	// .articles__header
+	&__header {
+	}
+	// .articles__body
+	&__body {
+		& > * {
+			&:not(:last-child) {
+				margin: 0px 0px 30px 0px;
+			}
+		}
+	}
+}

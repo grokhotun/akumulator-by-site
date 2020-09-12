@@ -1,0 +1,40 @@
+<div class="cart">
+    <span class="triangle"></span>
+    @@if(context.full) {
+        <div class="cart__header">
+            <span class="cart__title">Корзина</span>
+            <span class="cart__counter">(2)</span>
+        </div>
+        <div class="cart__body">
+            @@include('./modules/cart/cart-item.html', {
+                "name": "Аккумулятор SZNAJDER Carbon EFB 75 R",
+                "photo": "img/products/1.jpg",
+                "price": "200"
+            })       
+            @@include('./modules/cart/cart-item.html', {
+                "name": "Аккумулятор SZNAJDER Carbon EFB 75 R",
+                "photo": "img/products/1.jpg",
+                "price": "200"
+            })       
+        </div>
+        <div class="cart__footer">
+            <div class="cart__total total-cart">
+                <span class="total-cart__text">Итого:</span>
+                <span class="total-cart__price">200 руб.</span>
+            </div>
+            <a href="#" class="btn @@if(context.full){btn--primary} @if(!context.full){btn--disabled}">Оформить</a>
+        </div>
+    }
+    @@if(!context.full) {
+        <div class="cart__header">
+            <span class="cart__title">Корзина</span>
+            <span class="cart__counter">(0)</span>
+        </div>
+        <div class="cart__body">
+            <div class="cart__image">
+                <img src="./img/cart.svg" alt="Фото пустой корзины" />
+            </div>
+            <span class="cart__text">Корзина пуста :(</span>
+        </div>
+    }
+</div>

@@ -1,0 +1,98 @@
+.search-tip {
+	position: absolute;
+	display: none;
+	z-index: 5;
+	top: 60px;
+	left: 30px;
+	overflow: hidden;
+	width: 563px;
+	background-color: #ffffff;
+	border: 1px solid #f4f4f4;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 12px;
+	@media (max-width: $maxwidth5) {
+		width: 100%;
+		left: 0;
+	}
+	&.is-shown {
+		display: block;
+	}
+	// .search-tip__header
+	&__header {
+		background-color: $x-orange-lightest;
+		padding: 12px 53px;
+		@media (max-width: $maxwidth5) {
+			padding: 10px;
+		}
+	}
+	// .search-tip__title
+	&__title {
+		font-size: 11px;
+		line-height: 18px;
+		text-align: center;
+		color: $main-text;
+	}
+	// .search-tip__body
+	&__body {
+		padding: 22px 53px;
+		& > * {
+			&:not(:last-child) {
+				margin: 0px 0px 20px 0px;
+			}
+		}
+		@media (max-width: $maxwidth5) {
+			padding: 10px;
+		}
+	}
+}
+
+.search-tip-card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	& > * {
+		&:not(:last-child) {
+			margin: 0px 25px 0px 0px;
+			@media (max-width: $maxwidth5) {
+				margin: 0px 10px 0px 0px;
+			}
+		}
+	}
+	// .search-tip-card__photo
+	&__photo {
+		flex: 0 0 51px;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	// .search-tip-card__name
+	&__name {
+		flex: 1 0 150px;
+		font-family: "HelveticaNeueCyr";
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 16px;
+		color: $main-text;
+	}
+	// .search-tip-card__price
+	&__prices {
+		& > * {
+			&:not(:last-child) {
+				margin: 0px 0px 12px 0px;
+			}
+		}
+		.price-block {
+			&__price {
+				font-size: 16px;
+				span {
+					font-size: 11px;
+				}
+			}
+			&__note {
+				font-size: 11px;
+				line-height: 100%;
+			}
+		}
+	}
+}

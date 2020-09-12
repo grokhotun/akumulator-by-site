@@ -1,0 +1,80 @@
+.catalogue {
+    // .catalogue__button
+    &__button {
+        margin: 0px 0px 30px 0px;
+        height: 52px;
+        position: relative;
+        &:before {
+            content:'';
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            left: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url("../img/svg/sprite.svg#hamburger");
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__body {
+        position: relative;
+        max-height: 0;
+        overflow: hidden;
+        background: #FFFFFF;
+        border-radius: 30px;
+        opacity: 0;
+        transition: .2s;
+        &.is-opened {
+            opacity: 1;
+            border: 1px solid #DBDBDB;
+            overflow: visible;
+            max-height: 500px;
+            margin: 0px 0px 30px 0px;
+        }
+        .triangle {
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 8px 18px 8px;
+            border-color: transparent transparent #DBDBDB transparent;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 2px;
+                left: -6px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 6px 16px 6px;
+                border-color: transparent transparent #ffffff transparent;
+            }
+        }
+    }
+    // .catalogue__list
+    &__list {
+        padding: 30px;
+        & > li {
+            padding: 16px 0px 16px 0px;
+            &:not(:last-child) { 
+                border-bottom: 1px solid #DDDDDD;
+            }
+        }
+    }
+
+    // .catalogue__item
+    &__item {
+    }
+
+    // .catalogue__link
+
+    &__link {
+        font-size: 14px;
+        line-height: 16px;
+        color: $main-text;
+    }
+}

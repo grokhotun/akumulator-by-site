@@ -1,0 +1,40 @@
+.template-card-prev {
+    background: #FFFFFF;
+    padding: 38px;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 20px;
+    // .article-card-prev__title
+    &__title {
+        display: inline-block;
+        font-family: "HelveticaNeueCyr";
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        margin: 0px 0px 15px 0px;
+    }
+
+    &__date {
+        display: block;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 18px;
+        color: #FF9933;
+        margin: 0px 0px 8px 0px;
+    }
+    // .article-card-prev__text
+    &__text {
+        font-size: 13px;
+        line-height: 18px;
+        color: #000000;
+        margin: 0px 0px 21px 0px;
+        display: -webkit-box; 
+        -webkit-line-clamp: 4; 
+        -webkit-box-orient: vertical; 
+        overflow-y: hidden;
+    }
+    // .article-card-prev__button
+    &__button {
+    }
+}

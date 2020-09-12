@@ -1,0 +1,188 @@
+.cart {
+    position: absolute;
+    z-index: 99;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #DBDBDB;
+    border-radius: 20px;
+    min-width: 324px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease;
+    @media (max-width: $maxwidth5){
+        min-width: unset;
+        width: 300px;
+    }
+    .triangle {
+        position: absolute;
+        top: -18px;
+        right: 65px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 8px 18px 8px;
+        border-color: transparent transparent #DBDBDB transparent;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: -6px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 6px 16px 6px;
+            border-color: transparent transparent #ffffff transparent;
+        }
+    }
+    &.is-opened {
+        opacity: 1;
+        visibility: visible;
+    }
+    // .cart__header
+    &__header {
+        display: flex;
+        margin: 0px 0px 36px 0px;
+    }
+    // .cart__title
+    &__title { 
+        display: block;
+        font-family: "HelveticaNeueCyr";
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: $main-text;
+        
+    }
+    // .cart__counter
+    &__counter {
+        display: block;
+        font-family: "HelveticaNeueCyr";
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: $main-text;
+    }
+    // .cart__body
+    &__body {
+        & > * {
+           margin: 0px 0px 30px 0px; 
+        }
+    }
+    // .cart__image
+    &__image {
+    }
+    // .cart__text
+    &__text {
+        display: block;
+        font-family: "HelveticaNeueCyr";
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: $main-text;
+        margin: 0px 0px 34px 0px;
+    }
+    // .cart__footer
+    &__footer {
+        width: 100%;
+    }
+    &__total {
+        margin: 0px 0px 27px 0px;
+    }
+}
+
+.cart-item {
+    position: relative;
+    // .cart-item__header
+    &__header {
+        margin: 0px 0px 45px 0px;
+    }
+    // .cart-item__content
+    &__content {
+    }
+    // .cart-item__name
+    &__name {
+        display: inline-block;
+        max-width: 173px;
+        font-family: "HelveticaNeueCyr";
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: $main-text;
+        margin: 0px 0px 30px 0px;
+    }
+    // .cart-item__body
+    &__body {
+        display: flex;  
+        & > * {
+          &:not(:last-child) { margin: 0px 22px 0px 0px; }
+        }
+    }
+    // .cart-item__photo
+    &__photo {
+        flex: 0 0 79px;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    // .cart-item__info
+    &__info {
+        & > * {
+          &:not(:last-child) { margin: 0px 0px 20px 0px; }
+        }
+    }
+    // .cart-item__price
+    &__price {
+        font-family: "HelveticaNeueCyr";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+        color: #FF9933;
+        span {
+            font-size: 16px;
+        }
+    }
+    // .cart-item__close
+    &__close {
+        cursor: pointer;
+        position: absolute;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        top: 0;
+        right: 0;
+        background: url("../img/svg/sprite.svg#close");
+        background-size: contain;
+    }
+}
+
+.total-cart {
+    border-top: 1px solid #DDDDDD;
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+    // .total-cart__text    
+    &__text {
+        font-family: "HelveticaNeueCyr";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 16px;
+        color: #444444;
+        margin: 0px 7px 0px 0px;
+    }
+    // .total-cart__price
+    &__price {
+        font-family: "HelveticaNeueCyr";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+        color: #FF9933;
+    }
+}

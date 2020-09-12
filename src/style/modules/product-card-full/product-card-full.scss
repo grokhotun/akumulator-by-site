@@ -1,0 +1,197 @@
+.product-card-full {
+    &__content {
+        display: flex;
+        margin: 0px 0px 55px 0px;
+        @media (max-width: $maxwidth5) {
+            flex-direction: column;
+        }
+    }
+    &__reviews {
+        margin: 0px 0px 0px auto;
+        max-width: 678px;
+    }
+    // .product-card-full__info
+    &__info {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 60px 0px 0px;
+        @media (max-width: $maxwidth1) {
+            flex-direction: column;
+        }
+        @media (max-width: $maxwidth5) {
+            margin: 0px 0px 36px 0px;
+        }
+    }
+    // .product-card-full__photo
+    &__photo {
+    }
+    &__image {
+        margin: 0px 0px 0px 60px;
+        @media (max-width: $maxwidth1) {
+            margin: 0 auto;
+        }
+        width: 269px;
+        height: 223px;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    // .product-card-full__details
+    &__details {
+        flex: 0 0 270px;
+        .price-block {
+            &__price {
+                font-size: 36px;
+                span {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    // .product-card-full__button
+    &__button {
+        margin: 0px 0px 24px 0px;
+    }
+    // .product-card-full__specification
+    &__specification {
+    }
+    // .product-card-full__list
+    &__list {
+    }
+    // .product-card-full__item
+    &__item {
+        position: relative;
+        background: #ffefdf;
+        &:first-child,
+        :last-child {
+            border-radius: 8px 8px 0px 0px;
+        }
+        &:nth-child(2n + 2) {
+            background-color: #fff;
+        }
+    }
+    // .product-card-full__name
+    &__name {
+        display: block;
+        width: 150px;
+        text-align: right;
+        position: absolute;
+        top: 50%;
+        right: calc(100% + 60px);
+        transform: translateY(-50%);
+        @media (max-width: $maxwidth1) {
+            right: calc(100% + 30px);
+        }
+    }
+    // .product-card-full__value
+    &__value {
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000000;
+        padding: 12px 16px;
+    }
+    // .product-card-full__description
+    &__description {
+        flex: 0 0 324px;
+    }
+}
+.product-description {
+    & > .template-text {
+        margin: 0px 0px 20px 0px;
+    }
+    // .product-description__is-comparing
+    &__is-comparing {
+        margin: 0px 0px 41px 0px;
+        .checkbox__text {
+            text-transform: uppercase;
+        }
+    }
+    // .product-description__list
+    &__list {
+        max-width: 258px;
+        margin: 0px 0px 20px 0px;
+        @media (max-width: $maxwidth5) {
+            max-width: unset;
+        }
+        & > * {
+            &:not(:last-child) {
+                margin: 0px 0px 20px 0px;
+            }
+        }
+    }
+    // .product-description__item
+    &__item {
+        font-family: "HelveticaNeueCyr";
+        font-style: italic;
+        font-size: 13px;
+        line-height: 17px;
+        color: #444444;
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #ff9933;
+            border-radius: 50%;
+            margin: 0px 15px 0px 0px;
+        }
+    }
+}
+.product-details {
+    @media (max-width: $maxwidth5) {
+        text-align: center;
+    }
+    &__price {
+        margin: 0px 0px 33px 0px;
+        & > * {
+            &:not(:last-child) {
+                margin: 0px 0px 20px 0px;
+            }
+        }
+        .quantity-selector {
+            justify-content: flex-start;
+            @media (max-width: $maxwidth5) {
+                justify-content: center;
+            }
+        }
+    }
+}
+.product-reviews {
+    // .product-reviews__header
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 0px 43px 0px;
+        @media (max-width: $maxwidth5) {
+            flex-direction: column-reverse;
+        }
+    }
+    // .product-reviews__amount
+    &__amount {
+        span {
+            font-family: "HelveticaNeueCyr";
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 36px;
+            color: #444444;
+            &:last-child {
+                font-size: 18px;
+                line-height: 18px;
+            }
+        }
+    }
+    // .product-reviews__button
+    &__button {
+        max-width: 324px;
+        @media (max-width: $maxwidth5) {
+            margin: 0px 0px 22px 0px;
+            max-width: unset;
+        }
+    }
+    // .product-reviews__body
+    &__body {
+    }
+}

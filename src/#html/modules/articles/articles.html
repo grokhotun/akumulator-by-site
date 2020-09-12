@@ -1,0 +1,17 @@
+<div @@if(context.data){@@data} class="articles">
+    <div class="articles__header">
+        <div class="title-section">
+            <span class="title-section__title">Статьи</span>
+        </div>
+    </div>
+    <div class="articles__body">
+        @@include('./modules/template-card/template-card.html', {
+            "title":"Аренда аккумулятора",
+            "text":"Аренда автомобильного или лодочного аккумулятора в Минске"
+        })
+        @@include('./modules/template-card/template-card.html', {
+            "title":"Аренда аккумулятора",
+            "text":"Аренда автомобильного или лодочного аккумулятора в Минске"
+        })
+    </div>
+</div>

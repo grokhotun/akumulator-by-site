@@ -1,0 +1,26 @@
+.accumulator-selection {
+    padding: 30px;
+    background-color: $white;
+    border: 1px solid #DBDBDB;
+    border-radius: 20px;
+    // .accumulator-selection__title
+    &__title {
+        display: inline-block;
+        font-family: "HelveticaNeueCyr";
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: $main-text;
+        margin: 0px 0px 22px 0px;
+    }
+    // .accumulator-selection__body
+    &__body {
+        & > * {
+          &:not(:last-child) { margin: 0px 0px 7px 0px; }
+        }
+    }
+    // .accumulator-selection__button
+    &__button {
+    }
+}
